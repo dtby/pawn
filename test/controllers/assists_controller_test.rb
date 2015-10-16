@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class CarvoutsControllerTest < ActionController::TestCase
+class AssistsControllerTest < ActionController::TestCase
   # test "the truth" do
   #   assert true
   # end

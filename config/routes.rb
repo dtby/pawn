@@ -1,13 +1,21 @@
 Rails.application.routes.draw do
   root 'home#index'
 
+  # 政策指南
   resources :policies, only:[:index, :show]
-  resources :onlines, only:[:index]
+  # 在线课程
+  resources :courses, only:[:index]
+  # 考证培训
   resources :trains, only: [:index]
+  # 就业信息
   resources :jobs, only:[:index]
-  resources :carveouts, only: [:index]
-  resources :mentalities, only:[:index]
+  # 创业众筹
+  resources :raises, only: [:index]
+  # 心里辅导
+  resources :assists, only:[:index]
+  # 军友会
   resources :parties, only: [:index]
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

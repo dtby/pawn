@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class OnlinesControllerTest < ActionController::TestCase
+class RaisesControllerTest < ActionController::TestCase
   # test "the truth" do
   #   assert true
   # end
