@@ -54,6 +54,11 @@
 		
 	}
 }
+/**不规则head容器block**/
+.block2{
+	@extend .block;
+	padding-top: 30px;
+}
 /**共用block块的head**/
 .block-head{
 	padding: 0 10px;
@@ -68,13 +73,24 @@
 /**不规则head ( .head-blue2 < .block-head )**/
 .head-blue2{
 	@extend .block-head;
+	position: relative;
 	height: 15px;
 	line-height: 15px;
 	.head-l{
-		border-top: 185px solid #2E6699;
-		border-right: 50px solid transparent;
 		height: 35px;
-		width: 185px;
+		width: 150px;
+		background-color: #2E6699;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	.head-triangle{
+		position: absolute;
+		top: 0;
+		left: 150px;
+		border-top: 35px solid #2E6699;
+		border-right: 35px solid transparent;
+		width: 35px;
 	}
 }
 /**三色head ( .head-blue3 < .block-head )**/
