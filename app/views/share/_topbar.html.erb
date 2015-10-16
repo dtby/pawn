@@ -1,35 +1,33 @@
-<div class="container">
-	<%= image_tag"banner.png", width:"100%" %>
-	
-	<nav class="navbar navbar-default my-navbar">
-		<div class="container-fluid">
-			<!-- Brand and toggle get grouped for better mobile display -->
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-			</div>
+<%= image_tag"banner.png", width:"100%" %>
 
-			<!-- Collect the nav links, forms, and other content for toggling -->
-			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-				<ul class="nav navbar-nav">
-					<li class="navbar-first active"><a href="#">首页</a></li>
-					<li><a href="#">政策指南</a></li>
-					<li><a href="#">在线课程</a></li>
-					<li><a href="#">考证培训</a></li>
-					<li><a href="#">就业信息</a></li>
-					<li><a href="#">创业众筹</a></li>
-					<li><a href="#">心理辅导</a></li>
-					<li class="navbar-last"><a href="#">军友会</a></li>
-				</ul>
-				<ul class="nav navbar-nav navbar-right">
-					<li><a href="#">登录</a></li>
-					<li><a href="#">注册</a></li>
-				</ul>
-			</div><!-- /.navbar-collapse -->
-		</div><!-- /.container-fluid -->
-	</nav>
-</div>
+<nav class="navbar navbar-default my-navbar">
+	<div class="container-fluid">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+		</div>
+
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav">
+				<li class="navbar-first <%= "active" if params[:controller] == "home" %>"><%= link_to "首页", root_path %></li>
+				<li class="<%= "active" if params[:controller] == "policies" %>"><%= link_to "政策指南", policies_path %></li>
+				<li class="<%= "active" if params[:controller] == "courses" %>"><%= link_to "在线课程", courses_path %></li>
+				<li class="<%= "active" if params[:controller] == "trains" %>"><%= link_to "考证培训", trains_path %></li>
+				<li class="<%= "active" if params[:controller] == "jobs" %>"><%= link_to "就业信息", jobs_path %></li>
+				<li class="<%= "active" if params[:controller] == "raises" %>"><%= link_to "创业众筹", raises_path %></li>
+				<li class="<%= "active" if params[:controller] == "assists" %>"><%= link_to "心理辅导", assists_path %></li>
+				<li class="navbar-last <%= "active" if params[:controller] == "parties" %>"><%= link_to "军友会", parties_path %></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li><%= link_to "登录", "#" %></li>
+				<li><%= link_to "注册", "#" %></li>
+			</ul>
+		</div><!-- /.navbar-collapse -->
+	</div><!-- /.container-fluid -->
+</nav>

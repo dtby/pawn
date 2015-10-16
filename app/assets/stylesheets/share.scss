@@ -1,0 +1,38 @@
+/**topbar**/
+.my-navbar{
+	padding-top: 10px;
+	margin-top: 6px;
+	border-top: 5px solid #618cb4 !important;
+	border-bottom: 5px solid #2b5276 !important;
+	.navbar-nav{
+		li{
+			padding: 4px 5px;
+			border-right: 1px solid #618cb4;
+			border-left: 2px solid #2b5276;
+		}
+		.navbar-first{
+			border-left: none;
+		}
+		.navbar-last{
+			border-right: none;
+		}
+		.active > a{
+			border-radius: 5px;
+		}
+	}
+	.navbar-right li{
+		border: none;
+	}
+}
+
+/**footer**/
+.footer{
+	height: 90px;
+	background-color: #8d8d8d;
+	.footer-info{
+		width: 365px;
+		margin: 0 auto;
+		height: 90px;
+		padding: 25px;
+	}
+}

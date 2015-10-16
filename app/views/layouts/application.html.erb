@@ -7,8 +7,12 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<%= render partial: "share/topbar" %>
-<%= yield %>
+
+<div class="container">
+	<%= render partial: "share/topbar" %>
+	<%= yield %>
+	<%= render partial: "share/footer" %>
+</div>
 
 </body>
 </html>
