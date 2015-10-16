@@ -1,17 +1,3 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-.my-navbar{
-	margin: 10px 0 20px 0;
-	box-shadow: 5px 5px 5px #2E6699!important;
-	border:none !important;
-	border-radius: 0!important;
-	background-color: #2E6699!important;
-	a{
-		color: #fff !important;
-	}
-	.active > a{
-		color: #2E6699 !important;
-		background-color: #EDEDED !important;
-	}
-}
