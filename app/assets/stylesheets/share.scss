@@ -36,3 +36,17 @@
 		padding: 25px;
 	}
 }
+
+/**模块容器**/
+.block{
+	padding: 10px;
+	padding-bottom: 20px;
+	background-color: #fff;
+	margin-bottom: 20px;
+	border: 1px solid #ddd;
+	border-top: none;
+	&:before{
+		content: " ";
+		display: table;
+	}
+}
