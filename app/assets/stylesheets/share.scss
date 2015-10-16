@@ -37,7 +37,7 @@
 	}
 }
 
-/**模块容器**/
+/**模块容器block**/
 .block{
 	padding: 10px;
 	padding-bottom: 20px;
@@ -50,35 +50,47 @@
 		display: table;
 	}
 }
-/**public title bar**/
-.title-bar{
+/**共用block块的head**/
+.block-head{
 	padding: 0 10px;
 	color: #fff;
+	background-color: #2E6699;
 	a, a:hover{
 		color: #fff;
 		font-size: 10px;
+		float: right;
 	}
 }
-/**blue block bar**/
-.title-blue{
-	@extend .title-bar;
-	height: 35px;
-	line-height: 35px;
-	background-color: #2E6699;
-	font-size: 16px;
+/**不规则head ( .head-blue2 < .block-head )**/
+.head-blue2{
+	@extend .block-head;
+	height: 15px;
+	line-height: 15px;
+	.head-l{
+		border-top: 185px solid #2E6699;
+		border-right: 50px solid transparent;
+		height: 35px;
+		width: 185px;
+	}
 }
-/**three blue title block bar**/
-.title-blue3{
-	@extend .title-bar;
+/**三色head ( .head-blue3 < .block-head )**/
+.head-blue3{
+	@extend .block-head;
 	height: 20px;
 	line-height: 20px;
-	background-color: #2E6699;
-	.blue2{
+	.head-md{
 		height: 20px;
 		background-color: #3b81c1;
 	}
-	.blue3{
+	.head-r{
 		height: 20px;
 		background-color: #4597e3;
 	}
+}
+/**蓝色head ( .head-blue < .block-head )**/
+.head-blue{
+	@extend .block-head;
+	height: 35px;
+	line-height: 35px;
+	font-size: 16px;
 }
