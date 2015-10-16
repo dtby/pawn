@@ -1,3 +1,16 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+	.item{
+		line-height: 30px;
+	}
+	.my-control{
+		background-image: none !important;
+		color: #c7c7c7;
+		.glyphicon-chevron-left{
+			margin-left: -60px;
+		}
+		.glyphicon-chevron-right{
+			margin-right: -60px;
+		}
+	}
