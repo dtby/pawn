@@ -2,13 +2,13 @@
 <div class="row">
 	<div class="col-md-4">
 		<div class="head-blue2">
-			<div class="head-l"></div>
+			<div class="head-l"><span class="glyphicon"></span>&nbsp;&nbsp;政策指南</div>
 			<div class="head-triangle"></div>
 			<%= link_to "更多>>", "#" %>
 		</div>
 		<div class="block2 clearfix">
 			<div class="col-sm-12">
-				<ul class="info-display">
+				<ul class="block-ul">
 					<li><a href="#">国务院关于调整和完善固定资产投资项目...</a></li>
 					<li><a href="#">国务院办公厅关于推进分级诊疗制度建设...</a></li>
 					<li><a href="#">国务院办公厅关于批准烟台市城市总体规...</a></li>
@@ -20,13 +20,13 @@
 	</div>
 	<div class="col-md-4">
 		<div class="head-blue2">
-			<div class="head-l"></div>
+			<div class="head-l"><span class="glyphicon glyphicon-list"></span>&nbsp;&nbsp;考证培训信息</div>
 			<div class="head-triangle"></div>
 			<%= link_to "更多>>", "#" %>
 		</div>
 		<div class="block2 clearfix">
 			<div class="col-sm-12">
-				<ul>
+				<ul class="block-ul">
 					<li><a href="#">第十期分布式能源培训（北京）</a></li>
 					<li><a href="#">事业单位人事管理科学化、养老保险制度改...</a></li>
 					<li><a href="#">关于举办政府与社会资本合作与PPP项目方...</a></li>
@@ -38,13 +38,13 @@
 	</div>
 	<div class="col-md-4">
 		<div class="head-blue2">
-			<div class="head-l"></div>
+			<div class="head-l"><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;就业信息</div>
 			<div class="head-triangle"></div>
 			<%= link_to "更多>>", "#" %>
 		</div>
 		<div class="block2 clearfix">
 			<div class="col-md-12">
-				<ul>
+				<ul class="block-ul">
 					<li><a href="#">第十期分布式能源培训（北京）</a></li>
 					<li><a href="#">事业单位人事管理科学化、养老保险制度改...</a></li>
 					<li><a href="#">关于举办政府与社会资本合作与PPP项目方...</a></li>
@@ -66,60 +66,59 @@
 		</div>
 		<div class="block clearfix">
 			<div class="col-md-12">
+				<p class="block-p"><span class="glyphicon glyphicon-usd"></span>&nbsp;&nbsp;创业众筹</p>
 				<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-					  <!-- Wrapper for slides -->
-				  <div class="carousel-inner" role="listbox">
-				    <div class="item active">
-					    <div class="col-md-offset-1 col-md-10">
-					    	<div class="col-md-3 text-center">
-						    	<%=image_tag"invest_project1.png"%>
-						    	<p>项目投资项目投资</p>
-				        	
-			        	</div>
-			        	<div class="col-md-3 text-center">
-						    	 <%=image_tag"invest_project2.png", width:"80%"%>
-						      <p>项目投资项目投资</p>
-						    </div>
-						    <div class="col-md-3 text-center">
-						    	 <%=image_tag"invest_project3.png", width:"80%"%>
-						      <p>项目投资项目投资</p>
-						    </div>
-						    <div class="col-md-3 text-center">
-						    	 <%=image_tag"invest_project4.png", width:"80%"%>
-						      <p>项目投资项目投资</p>
-						    </div>		 
-					    </div>    
-				    </div>
-				    <div class="item">
-					    <div class="col-md-offset-1 col-md-10">
-					    	<div class="col-md-3 text-center">
-						    	<%=image_tag"invest_project1.png", width:"80%"%>
-						    	<p>项目投资项目投资</p>
-			        	</div>
-			        	<div class="col-md-3 text-center">
-						    	 <%=image_tag"invest_project2.png", width:"80%"%>
-						      <p>项目投资项目投资</p>
-						    </div>
-						    <div class="col-md-3 text-center">
-						    	 <%=image_tag"invest_project3.png", width:"80%"%>
-						      <p>项目投资项目投资</p>
-						    </div>
-						    <div class="col-md-3 text-center">
-						    	 <%=image_tag"invest_project4.png", width:"80%"%>
-						      <p>项目投资项目投资</p>
-						    </div>		 
-					    </div>		     
-				    </div>
-				  </div>
+					<!-- Wrapper for slides -->
+					<div class="carousel-inner" role="listbox">
+						<div class="item active">
+							<div class="col-md-12">
+								<div class="col-md-3 text-center">
+									<%=image_tag"invest_project1.png", width:"100%", height: "145"%>
+									<p>项目投资项目投资</p>
+								</div>
+								<div class="col-md-3 text-center">
+									<%=image_tag"invest_project2.png", width:"100%", height: "145"%>
+									<p>项目投资项目投资</p>
+								</div>
+								<div class="col-md-3 text-center">
+									<%=image_tag"invest_project3.png", width:"100%", height: "145"%>
+									<p>项目投资项目投资</p>
+								</div>
+								<div class="col-md-3 text-center">
+									<%=image_tag"invest_project4.png", width:"100%", height: "145"%>
+									<p>项目投资项目投资</p>
+								</div>		 
+							</div>    
+						</div>
+						<div class="item">
+							<div class="col-md-12">
+								<div class="col-md-3 text-center">
+									<%=image_tag"invest_project1.png", width:"100%", height: "145"%>
+									<p>项目投资项目投资</p>
+								</div>
+								<div class="col-md-3 text-center">
+									<%=image_tag"invest_project2.png", width:"100%", height: "145"%>
+									<p>项目投资项目投资</p>
+								</div>
+								<div class="col-md-3 text-center">
+									<%=image_tag"invest_project3.png", width:"100%", height: "145"%>
+									<p>项目投资项目投资</p>
+								</div>
+								<div class="col-md-3 text-center">
+									<%=image_tag"invest_project4.png", width:"100%", height: "145"%>
+									<p>项目投资项目投资</p>
+								</div>		 
+							</div>		     
+						</div>
+					</div>
 
-				  <!-- Controls -->
-				  <a class="left carousel-control my-control" href="#carousel-example-generic" role="button" data-slide="prev">
-				    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-				  </a>
-				  <a class="right carousel-control my-control" href="#carousel-example-generic" role="button" data-slide="next">
-				    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-				    <span class="sr-only">Next</span>
-				  </a>
+					<!-- Controls -->
+					<a class="left carousel-control my-control" href="#carousel-example-generic" role="button" data-slide="prev">
+						<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+					</a>
+					<a class="right carousel-control my-control" href="#carousel-example-generic" role="button" data-slide="next">
+						<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+					</a>
 				</div>
 			</div>
 		</div>
@@ -133,14 +132,15 @@
 		</div>
 		<div class="block clearfix">
 			<div class="col-md-12">
-				<ul>
-					<li><a href="#"></a></li>
-					<li><a href="#"></a></li>
-					<li><a href="#"></a></li>
-					<li><a href="#"></a></li>
-					<li><a href="#"></a></li>
+				<ul class="block-ul">
+					<li><a href="#">第十期分布式能源培训（北京）</a></li>
+					<li><a href="#">事业单位人事管理科学化、养老保险制度改...</a></li>
+					<li><a href="#">关于举办政府与社会资本合作与PPP项目方...</a></li>
+					<li><a href="#">关于举办事业单位人事管理科学化、养老保...</a></li>
+					<li><a href="#">国家发改委培训中心举办行政事业单位财务...</a></li>
 				</ul>
-			</div>在线课程</div>
+			</div>
+		</div>
 	</div>
 	<div class="col-md-4">
 		<div class="head-blue">
@@ -148,14 +148,15 @@
 		</div>
 		<div class="block clearfix">
 			<div class="col-md-12">
-				<ul>
-					<li><a href="#"></a></li>
-					<li><a href="#"></a></li>
-					<li><a href="#"></a></li>
-					<li><a href="#"></a></li>
-					<li><a href="#"></a></li>
+				<ul class="block-ul">
+					<li><a href="#">心理咨询的文章心理咨询的文章心理咨询的...</a></li>
+					<li><a href="#">心理咨询的文章心理咨询的文章心理咨询的...</a></li>
+					<li><a href="#">心理咨询的文章心理咨询的文章心理咨询的...</a></li>
+					<li><a href="#">心理咨询的文章心理咨询的文章心理咨询的...</a></li>
+					<li><a href="#">心理咨询的文章心理咨询的文章心理咨询的...</a></li>
 				</ul>
-			</div>心里咨询</div>
+			</div>
+		</div>
 	</div>
 	<div class="col-md-4">
 		<div class="head-blue">
@@ -163,13 +164,14 @@
 		</div>
 		<div class="block clearfix">
 			<div class="col-md-12">
-				<ul>
-					<li><a href="#"></a></li>
-					<li><a href="#"></a></li>
-					<li><a href="#"></a></li>
-					<li><a href="#"></a></li>
-					<li><a href="#"></a></li>
+				<ul class="block-ul">
+					<li><a href="#">军转干信息登记<span class="text-danger">（急急急）</span></a></li>
+					<li><a href="#">军转干信息登记军转干信息登记</a></li>
+					<li><a href="#">军转干信息登记</a></li>
+					<li><a href="#">军转干信息登记军转干信息登记</a></li>
+					<li><a href="#">军转干信息登记军转干信息登记</a></li>
 				</ul>
-			</div>军友会</div>
+			</div>
+		</div>
 	</div>
 </div>

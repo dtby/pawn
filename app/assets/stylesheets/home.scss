@@ -7,6 +7,7 @@
 	.my-control{
 		background-image: none !important;
 		color: #c7c7c7;
+		width: 0 !important;
 		.glyphicon-chevron-left{
 			margin-left: -60px;
 			color: #2E6698;
@@ -14,6 +15,5 @@
 		.glyphicon-chevron-right{
 			margin-right: -60px;
 			color: #2E6698;
-
 		}
 	}

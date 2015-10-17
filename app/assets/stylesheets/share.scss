@@ -40,18 +40,23 @@
 /**模块容器block**/
 .block{
 	padding: 10px;
-	padding-bottom: 20px;
 	background-color: #fff;
 	margin-bottom: 20px;
 	border: 1px solid #ddd;
 	border-top: none;
-	&:before{
-		content: " ";
-		display: table;
+	.block-p{
+		font-size: 16px;
+		color: #2E6699;
+		margin-bottom: 20px;
 	}
-	ul{
-		padding-left: 20px;
-		
+	.block-ul{
+		color: #2E6699;
+		li{
+			padding: 13px 0;
+			a{
+				color: #333;
+			}
+		}
 	}
 }
 /**不规则head容器block**/
@@ -59,6 +64,7 @@
 	@extend .block;
 	padding-top: 30px;
 }
+
 /**共用block块的head**/
 .block-head{
 	padding: 0 10px;
@@ -70,6 +76,7 @@
 		float: right;
 	}
 }
+
 /**不规则head ( .head-blue2 < .block-head )**/
 .head-blue2{
 	@extend .block-head;
@@ -78,6 +85,9 @@
 	line-height: 15px;
 	.head-l{
 		height: 35px;
+		line-height: 35px;
+		font-size: 16px;
+		padding-left: 10px;
 		width: 150px;
 		background-color: #2E6699;
 		position: absolute;
