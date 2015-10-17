@@ -1,1 +1,21 @@
-<h1>policies show</h1>
+<div class="row">
+	<div class="col-md-12">
+		<div class="head-blue2">
+			<div class="head-l"><span class="glyphicon glyphicon-time"></span>&nbsp;&nbsp;政策指南</div>
+			<div class="head-triangle"></div>
+			<ol class="breadcrumb show-crumb pull-right">
+				<li>所在位置:</li>
+				<li><a href="<%= root_path %>">首页</a></li>
+				<li><%= link_to "政策指南", policies_path %></li>
+				<li class="active">正文</li>
+			</ol>
+		</div>
+		<div class="block2 clearfix">
+			<div class="col-xs-12">
+				<h4 class="text-center" style="color: #2E6699;">国务院关于调整和完善固定资产投资项目资本金制度的通知</h4>
+				<hr class="policy-hr">
+				<%= image_tag("policy_content.png", width: "100%") %>
+			</div>
+		</div>
+	</div>
+</div>

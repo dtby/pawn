@@ -8,6 +8,18 @@
 	margin: 0;
 	background-color: transparent !important;
 }
+.show-crumb{
+	@extend .my-crumb;
+	position: absolute;
+	top: 20px;
+	right: 10px;
+	li{
+		color: #333;
+		a{
+			color: #337ab7 !important;
+		}
+	}
+}
 .policies-ul{
 	list-style-position: inside;
 	padding-left: 0px;
@@ -26,4 +38,8 @@
 			}
 		}
 	}
+}
+//policies#show
+.policy-hr{
+	border-color: #2E6699;
 }
