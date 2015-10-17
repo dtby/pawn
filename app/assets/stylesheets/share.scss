@@ -51,11 +51,10 @@
 	}
 	.block-ul{
 		color: #2E6699;
-		li{
-			padding: 13px 0;
-			a{
-				color: #333;
-			}
+		padding-left: 20px;
+		li a{
+			line-height: 3;
+			color: #333;
 		}
 	}
 }
