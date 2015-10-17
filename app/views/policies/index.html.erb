@@ -1,1 +1,54 @@
-<h1>policies index</h1>
+<div class="row">
+	<div class="col-md-12"> 
+		<div class="head-blue3">
+			<div class="row">
+				<div class="head-md col-xs-4 col-xs-offset-4"></div>
+				<div class="head-r col-xs-4"></div>
+			</div>
+		</div>
+		<div class="block clearfix">
+			<div class="col-xs-12">
+				<div class="col-xs-6 policies-title">
+					<span class="glyphicon glyphicon-time"></span>&nbsp;&nbsp;政策指南
+				</div>
+				<div class="col-xs-6">
+					<ol class="breadcrumb my-crumb pull-right">
+						<li>所在位置:</li>
+						<li><a href="<%= root_path %>">首页</a></li>
+						<li class="active">政策指南</li>
+					</ol>
+				</div>
+			</div>
+			<div class="col-xs-12">
+				<ul class="policies-ul">
+					<% (1..17).each do |policy| %>
+						<li>
+							<%= link_to policy_path(policy) do %>
+							国务院关于苏州工业园区开展开放创新综合实验总体方案的批复<span class="pull-right">2015-10-13</span>
+							<% end %>
+						</li>
+					<% end %>
+				</ul>
+				<nav class="text-center">
+					<ul class="pagination">
+						<li>
+							<a href="#" aria-label="Previous">
+								<span aria-hidden="true">&laquo;</span>
+							</a>
+						</li>
+						<li><a href="#">1</a></li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">4</a></li>
+						<li><a href="#">5</a></li>
+						<li>
+							<a href="#" aria-label="Next">
+								<span aria-hidden="true">&raquo;</span>
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</div>
+</div>

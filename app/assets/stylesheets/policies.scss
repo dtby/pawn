@@ -1,3 +1,29 @@
-// Place all the styles related to the policies controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+//policies#index
+.policies-title{
+	color: #2E6699;
+	font-size: 16px;
+}
+.my-crumb{
+	padding: 0 !important;
+	margin: 0;
+	background-color: transparent !important;
+}
+.policies-ul{
+	list-style-position: inside;
+	padding-left: 0px;
+	color: #2E6699;
+	font-size: 20px;
+	li{
+		border-bottom: 1px dashed #333;
+		padding: 0  40px;
+		line-height: 40px;
+		a{
+			color: #333;
+			font-size: 14px;
+			&:hover{
+				text-decoration: none;
+				color:  #3b81c1;
+			}
+		}
+	}
+}
