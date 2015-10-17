@@ -1,3 +1,25 @@
-// Place all the styles related to the raises controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.raises-picture {
+  margin-bottom: 20px;
+}
+.raises-picture-a {
+  .raises-tab {
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+    padding: 0 0 15px 0!important;
+    ul {
+      list-style: none;
+      padding-left: 0;
+      margin-top: 40px;
+      li {
+        float:left;
+        background-color: #D4D4D4;
+        padding: 3px 5px;
+        margin: 0 5px; 
+      }
+    }
+    .progress {
+      margin: 20px 0;
+      height: 10px !important;
+    }
+  }
+}
