@@ -2,17 +2,22 @@
 <html>
 <head>
   <title>Pawn</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<div class="container">
-	<%= render partial: "share/topbar" %>
-	<%= yield %>
-	<%= render partial: "share/footer" %>
-</div>
-
+<!-- <p class="notice"><%= notice %></p>
+<p class="alert"><%= alert %></p> -->
+  <% if params[:controller].include?("devise") %>
+    <%= yield %>
+  <% else %>
+    <div class="container">
+      <%= render partial: "share/topbar" %>
+    	<%= yield %>
+      <%= render partial: "share/footer" %>
+    </div>
+  <% end %>
 </body>
 </html>

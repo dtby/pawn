@@ -6,6 +6,7 @@ gem 'rails', '4.2.3'
 # Use mysql as the database for Active Record
 gem 'mysql2', '~> 0.3.18'
 
+gem 'devise'
 # Use sqlite3 as the database for Active Record
 #gem 'sqlite3'
 

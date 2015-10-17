@@ -1,0 +1,45 @@
+<div class="bg-page">
+<div class="col-md-3 col-md-offset-8 form-login">
+  <div class="col-md-12 login-row">
+    <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+      <%#= devise_error_messages! %>
+
+      <div class="fiel">
+        <%= f.label :用户名 %><br />
+        <%= f.email_field :username, autofocus: true %>
+      </div>
+
+      <div class="fiel">
+        <%= f.label :密码 %>
+        <% if @minimum_password_length %>
+        <em>(至少<%= @minimum_password_length %>位数)</em>
+        <% end %><br />
+        <%= f.password_field :password, autocomplete: "off" %>
+      </div>
+
+      <div class="fiel">
+        <%= f.label :邮箱 %><br />
+        <%= f.email_field :email, autofocus: true %>
+      </div>
+
+      <div class="fiel">
+        <%= f.label :原部队 %><br />
+        <%= f.email_field :force, autofocus: true%>
+      </div>
+
+     <!--  <div class="field">
+        <%= f.label :确认密码 %><br />
+        <%= f.password_field :password_confirmation, autocomplete: "off" %>
+      </div> -->
+
+      <div class="actions text-center col-md-6">
+        <%= f.submit "注册", class:"btn btn-success sign-up-btn" %>
+      </div>
+      <div class="actions text-center col-md-6">
+        <%= link_to "返回登录", new_user_session_path, class:"btn btn-defaul" %>
+      </div>
+    <% end %>
+    </div>
+  </div>
+</div>
+<%#= render "devise/shared/links" %>

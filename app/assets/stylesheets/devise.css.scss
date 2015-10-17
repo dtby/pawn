@@ -1,0 +1,47 @@
+.bg-page {
+  background:url("log_in.png") left top;
+  background-size: 100% 100%;
+  min-height: 840px;
+}
+.form-login {
+  position: absolute;
+  top: 300px;
+  right: 100px;
+  padding: 20px !important;
+  background-color: #E7F0F6;
+  .login-row {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    .field {
+      padding: 15px 25px;
+      input {
+        width: 100%;
+        font-size: 20px;
+      }
+    }
+    .sign-in-text {
+      color: #FCD900;
+    }
+    .actions {
+      padding-bottom: 10px;
+      .btn-login {
+        margin-right: 14px;
+      }
+    }
+  }
+}
+
+.sign-up-btn {
+  width: 80%;
+  margin-left: 9px;
+}
+
+.fiel {
+  padding: 8px 25px;
+  input {
+    width: 100%;
+    font-size: 20px;
+  }
+}
+
