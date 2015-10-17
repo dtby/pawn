@@ -1,1 +1,94 @@
-assists
+<div class="row">
+	<div class="col-xs-12">
+		<div class="head-blue3">
+			<div class="row">
+				<div class="head-xs col-xs-4 col-xs-offset-4"></div>
+				<div class="head-r col-xs-4"></div>
+			</div>
+		</div>
+		<div class="block clearfix">
+			<div class="col-xs-12">
+				<p class="block-p pull-left"><span class="glyphicon glyphicon-heart"></span>&nbsp;&nbsp;心理咨询</p>
+				<ol class="breadcrumb pull-right">
+					<li>所在位置:</li>
+					<li><a href="<%= root_path %>">首页</a></li>
+					<li class="active">心里辅导</li>
+				</ol>
+			</div>
+			<div class="col-xs-12">
+				<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+					<!-- Wrapper for slides -->
+					<div class="carousel-inner" role="listbox">
+						<div class="item active">
+							<div class="col-xs-12">
+								<div class="col-xs-2 col-xs-offset-1 text-center">
+									<div class="assists-teacher text-center">
+										<%=image_tag"counselor.png", width:"100%", height: "200"%>
+										<p><strong class="text-primary">张某某</strong><br>国家二级心理咨询师</p>
+									</div>
+									<p></p>
+									<button type="button" class="btn btn-danger btn-sm">在线咨询</button>
+								</div>
+								<% 4.times do %>
+								<div class="col-xs-2 text-center">
+									<div class="assists-teacher text-center">
+										<%=image_tag"counselor.png", width:"100%", height: "200"%>
+										<p><strong class="text-primary">张某某</strong><br>国家二级心理咨询师</p>
+									</div>
+									<p></p>
+									<button type="button" class="btn btn-danger btn-sm">在线咨询</button>
+								</div>
+								<% end %>	 
+							</div>    
+						</div>
+					</div>
+
+					<!-- Controls -->
+					<a class="left carousel-control my-control" href="#carousel-example-generic" role="button" data-slide="prev">
+						<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+					</a>
+					<a class="right carousel-control my-control" href="#carousel-example-generic" role="button" data-slide="next">
+						<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-xs-12"> 
+		<div class="block clearfix" style="border-top: 1px solid #ddd;">
+			<div class="col-xs-12">
+				<ul class="policies-ul">
+					<% (1..17).each do |policy| %>
+						<li>
+							<%= link_to policy_path(policy) do %>
+							家庭系统治疗法家庭系统治疗法<span class="pull-right">2015-10-13</span>
+							<% end %>
+						</li>
+					<% end %>
+				</ul>
+				<nav class="text-center">
+					<ul class="pagination">
+						<li>
+							<a href="#" aria-label="Previous">
+								<span aria-hidden="true">&laquo;</span>
+							</a>
+						</li>
+						<li><a href="#">1</a></li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">4</a></li>
+						<li><a href="#">5</a></li>
+						<li>
+							<a href="#" aria-label="Next">
+								<span aria-hidden="true">&raquo;</span>
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</div>
+</div>
