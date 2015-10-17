@@ -11,10 +11,7 @@
 /log/*
 !/log/.keep
 /config/initializers/qy_wechat_config.rb
-/tmp/cache
-/tmp/sessions
-/tmp/sockets
-/tmp/pids/server.pid
+/tmp
 public/assets/
 current
 last_version
