@@ -3,13 +3,36 @@
 		<div class="head-blue3">
 			<div class="row">
 				<div class="head-md col-xs-4 col-xs-offset-4"></div>
-				<div class="head-r col-xs-4"><%= link_to "更多>>", "#" %></div>
+				<div class="head-r col-xs-4"></div>
 			</div>
 		</div>
 		<div class="block clearfix">
 			<div class="col-md-12">
-				<p class="block-p"><span class="glyphicon glyphicon-usd"></span>&nbsp;&nbsp;创业众筹</p>
-
+				<p class="block-p pull-left"><span class="glyphicon glyphicon-list-alt"></span>&nbsp;&nbsp;在线课程</p>
+				<ol class="breadcrumb pull-right">
+					<li>所在位置:</li>
+					<li><a href="<%= root_path %>">首页</a></li>
+					<li class="active">在线课程</li>
+				</ol>
+			</div>
+			<div class="col-xs-12 courses-nav">
+				<div class="col-xs-2"><a href="#" type="button" class="btn btn-default active">全部课程</a></div>
+				<div class="col-xs-2"><a href="#" type="button" class="btn btn-default">公务员考试</a></div>
+				<div class="col-xs-2"><a href="#" type="button" class="btn btn-default">职业资格考试</a></div>
+				<div class="col-xs-2"><a href="#" type="button" class="btn btn-default">专业技能考试</a></div>
+				<div class="col-xs-2"><a href="#" type="button" class="btn btn-default">在线培训</a></div>
+				<div class="col-xs-2"><a href="#" type="button" class="btn btn-default">课程展示</a></div>
+			</div>
+		</div>
+		<div class="block clearfix">
+			<p></p>
+			<div class="col-xs-12">
+				<% 9.times do %>
+				<div class="col-xs-4">
+					<%= image_tag "online_course.png", width: "100%" %>
+					<h5 class="text-center">在线课程在线课程在线课程</h5>
+				</div>
+				<% end %>
 			</div>
 		</div>
 	</div>
