@@ -4,16 +4,16 @@
 		<div class="head-blue2">
 			<div class="head-l"><span class="glyphicon"></span>&nbsp;&nbsp;政策指南</div>
 			<div class="head-triangle"></div>
-			<%= link_to "更多>>", "#" %>
+			<%= link_to "更多>>", policies_path %>
 		</div>
 		<div class="block2 clearfix">
 			<div class="col-sm-12">
 				<ul class="block-ul">
-					<li><a href="#">国务院关于调整和完善固定资产投资项目...</a></li>
-					<li><a href="#">国务院办公厅关于推进分级诊疗制度建设...</a></li>
-					<li><a href="#">国务院办公厅关于批准烟台市城市总体规...</a></li>
-					<li><a href="#">国务院关于同意设立云南滇中新区的批复...</a></li>
-					<li><a href="#">国务院办公厅关于加快融资租赁业发展的...</a></li>
+					<li><a href="<%= policy_path(1) %>">国务院关于调整和完善固定资产投资项目...</a></li>
+					<li><a href="<%= policy_path(1) %>">国务院办公厅关于推进分级诊疗制度建设...</a></li>
+					<li><a href="<%= policy_path(1) %>">国务院办公厅关于批准烟台市城市总体规...</a></li>
+					<li><a href="<%= policy_path(1) %>">国务院关于同意设立云南滇中新区的批复...</a></li>
+					<li><a href="<%= policy_path(1) %>">国务院办公厅关于加快融资租赁业发展的...</a></li>
 				</ul>
 			</div>
 		</div>
@@ -22,7 +22,7 @@
 		<div class="head-blue2">
 			<div class="head-l"><span class="glyphicon glyphicon-list"></span>&nbsp;&nbsp;考证培训信息</div>
 			<div class="head-triangle"></div>
-			<%= link_to "更多>>", "#" %>
+			<%= link_to "更多>>", trains_path %>
 		</div>
 		<div class="block2 clearfix">
 			<div class="col-sm-12">
@@ -40,7 +40,7 @@
 		<div class="head-blue2">
 			<div class="head-l"><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;就业信息</div>
 			<div class="head-triangle"></div>
-			<%= link_to "更多>>", "#" %>
+			<%= link_to "更多>>", jobs_path %>
 		</div>
 		<div class="block2 clearfix">
 			<div class="col-md-12">
@@ -61,7 +61,7 @@
 		<div class="head-blue3">
 			<div class="row">
 				<div class="head-md col-xs-4 col-xs-offset-4"></div>
-				<div class="head-r col-xs-4"><%= link_to "更多>>", "#" %></div>
+				<div class="head-r col-xs-4"><%= link_to "更多>>", raises_path %></div>
 			</div>
 		</div>
 		<div class="block clearfix">
@@ -128,7 +128,7 @@
 <div class="row" style="overflow: hidden;">
 	<div class="col-md-4">
 		<div class="head-blue">
-			<span>icon</span> 在线课程<%= link_to "更多>>", "#" %>
+			<span>icon</span> 在线课程<%= link_to "更多>>", courses_path %>
 		</div>
 		<div class="block clearfix">
 			<% 2.times do %>
@@ -152,7 +152,7 @@
 	</div>
 	<div class="col-md-4">
 		<div class="head-blue">
-			<span class="glyphicon glyphicon-heart"></span> 心里咨询<%= link_to "更多>>", "#" %>
+			<span class="glyphicon glyphicon-heart"></span> 心里咨询<%= link_to "更多>>", assists_path %>
 		</div>
 		<div class="block clearfix">
 			<div class="col-md-12">
@@ -169,7 +169,7 @@
 	</div>
 	<div class="col-md-4">
 		<div class="head-blue">
-			<span>icon</span> 军友会<%= link_to "更多>>", "#" %>
+			<span>icon</span> 军友会<%= link_to "更多>>", parties_path %>
 		</div>
 		<div class="block clearfix">
 			<div class="col-md-12">
