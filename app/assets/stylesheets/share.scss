@@ -52,9 +52,14 @@
 	.block-ul{
 		color: #2E6699;
 		padding-left: 20px;
+		margin-bottom: 0;
 		li a{
-			line-height: 3;
+			line-height: 46px;
 			color: #333;
+			&:hover{
+				text-decoration: none;
+				color:  #3b81c1;
+			}
 		}
 	}
 }

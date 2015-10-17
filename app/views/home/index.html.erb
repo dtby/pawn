@@ -131,14 +131,22 @@
 			<span>icon</span> 在线课程<%= link_to "更多>>", "#" %>
 		</div>
 		<div class="block clearfix">
-			<div class="col-md-12">
-				<ul class="block-ul">
-					<li><a href="#">第十期分布式能源培训（北京）</a></li>
-					<li><a href="#">事业单位人事管理科学化、养老保险制度改...</a></li>
-					<li><a href="#">关于举办政府与社会资本合作与PPP项目方...</a></li>
-					<li><a href="#">关于举办事业单位人事管理科学化、养老保...</a></li>
-					<li><a href="#">国家发改委培训中心举办行政事业单位财务...</a></li>
-				</ul>
+			<% 2.times do %>
+				<div class="row">
+					<div class="col-xs-5"><%= image_tag("online_course.png", class: "img-responsive") %></div>
+					<div class="col-xs-7">
+						<h5>军转干课程军转干课程</h5>
+						<p class="text-muted">军转干课程军转干课程军转干课程军转干课程军转干课程</p>
+					</div>
+				</div>
+				<hr class="courses-hr">
+			<% end %>
+			<div class="row">
+				<div class="col-xs-5"><%= image_tag("online_course.png", class: "img-responsive") %></div>
+				<div class="col-xs-7">
+					<h5>军转干课程军转干课程</h5>
+					<p class="text-muted">军转干课程军转干课程军转干课程军转干课程军转干课程</p>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -149,6 +157,7 @@
 		<div class="block clearfix">
 			<div class="col-md-12">
 				<ul class="block-ul">
+					<li><a href="#">心理咨询的文章心理咨询的文章心理咨询的...</a></li>
 					<li><a href="#">心理咨询的文章心理咨询的文章心理咨询的...</a></li>
 					<li><a href="#">心理咨询的文章心理咨询的文章心理咨询的...</a></li>
 					<li><a href="#">心理咨询的文章心理咨询的文章心理咨询的...</a></li>
@@ -167,7 +176,8 @@
 				<ul class="block-ul">
 					<li><a href="#">军转干信息登记<span class="text-danger">（急急急）</span></a></li>
 					<li><a href="#">军转干信息登记军转干信息登记</a></li>
-					<li><a href="#">军转干信息登记</a></li>
+					<li><a href="#">军转干信息登记<span class="text-danger">（急急急）</span></a></li>
+					<li><a href="#">军转干信息登记军转干信息登记<span class="text-danger">（急急急）</span></a></li>
 					<li><a href="#">军转干信息登记军转干信息登记</a></li>
 					<li><a href="#">军转干信息登记军转干信息登记</a></li>
 				</ul>
