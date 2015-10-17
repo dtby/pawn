@@ -1,1 +1,99 @@
-index.html.erb
+<div class="row">
+	<div class="col-md-12">
+		<div class="head-blue3">
+			<div class="row">
+				<div class="head-md col-xs-4 col-xs-offset-4"></div>
+				<div class="head-r col-xs-4"></div>
+			</div>
+		</div>
+		<div class="block clearfix">
+			<div class="col-md-12">
+				<p class="block-p pull-left"><span class="glyphicon glyphicon-list-alt"></span>&nbsp;&nbsp;在线课程</p>
+				<ol class="breadcrumb pull-right">
+					<li>所在位置:</li>
+					<li><a href="<%= root_path %>">首页</a></li>
+					<li class="active">在线课程</li>
+				</ol>
+			</div>
+			<div class="col-xs-12 courses-nav">
+				<form class="form-inline">
+					<div class="form-group col-xs-2">
+						<div class="dropdown">
+							<button class="btn btn-default btn-job dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+								地点
+								<span class="caret"></span>
+							</button>
+							<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+								<li><a href="#">上海</a></li>
+								<li><a href="#">北京</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="form-group col-xs-2">
+						<div class="dropdown">
+							<button class="btn btn-default btn-job dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+								职位
+								<span class="caret"></span>
+							</button>
+							<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+								<li><a href="#">老师</a></li>
+								<li><a href="#">工程师</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="form-group col-xs-6">
+						<input type="text" class="form-control" style="width: 100%;" placeholder="关键字搜索">
+					</div>
+					<div class="col-xs-1"><button type="submit" class="btn btn-success btn-job">搜索</button></div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="row">
+	<div class="col-md-12"> 
+		<div class="gray-head" style="padding: 0 60px;">
+			<div class="row">
+				<div class="col-xs-6" style="text-indent: 60px;">公司名称</div>
+				<div class="col-xs-3" style="text-indent: 30px;">职位名称</div>
+				<div class="col-xs-3 text-center">发布时间</div>
+			</div>
+		</div>
+		<div class="block clearfix">
+			<div class="col-xs-12">
+				<ul class="policies-ul" style="list-style-type: none;">
+					<% (1..17).each do |policy| %>
+						<li>
+							<%= link_to "#" do %>
+								<div class="row">
+									<div class="col-xs-6">[北京] 北京市安伦律师事务所</div>
+									<div class="col-xs-3">律所实习生招聘</div>
+									<div class="col-xs-3 text-center">2015-10-13</div>
+								</div>
+							<% end %>
+						</li>
+					<% end %>
+				</ul>
+				<nav class="text-center">
+					<ul class="pagination">
+						<li>
+							<a href="#" aria-label="Previous">
+								<span aria-hidden="true">&laquo;</span>
+							</a>
+						</li>
+						<li><a href="#">1</a></li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">4</a></li>
+						<li><a href="#">5</a></li>
+						<li>
+							<a href="#" aria-label="Next">
+								<span aria-hidden="true">&raquo;</span>
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</div>
+</div>
